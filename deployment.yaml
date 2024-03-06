@@ -1,0 +1,20 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cambai
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cambai
+  template:
+    metadata:
+      labels:
+        app: cambai
+    spec:
+      containers:
+      - name: cambai
+        image: nihar0804/my-app:latest
+        ports:
+        - containerPort: 80

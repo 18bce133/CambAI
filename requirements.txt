@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+huey
+redis
+fakeredis
+mock
+pytest
+httpx
